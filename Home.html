@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #cfbea4;
+}
+
+@font-face{
+  font-family: myFont;
+  src:url(Merriweather-BlackItalic.ttf);
+}
+
+/* Header/Blog Title */
+.header {
+  position: relative;
+  padding: 0;
+  text-align: center;
+  margin-top: 10px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(ss-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(1);
+}
+
+.header h1 {
+    position: relative;
+    font-size: 50px;
+    font-family: myFont; 
+    color: rgb(54, 15, 15);
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav {
+  overflow: hidden;
+  background-color: #333; /* Background color for the navigation bar */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
+
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+  text-align: center;
+}
+
+.circle-frame {
+        width: 150px; 
+        height: 150px; 
+        overflow: hidden; 
+        border-radius: 50%; 
+        border: 5px solid #ccc; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin: auto;
+        width: 10%;
+        height: auto;
+    }
+
+    .circle-frame img {
+        width: 100%; 
+        height: auto; 
+        object-fit: contain; 
+        align-items: center;
+    }
+
+/* Footer */
+.footer {
+  padding: 20px;
+  font-size: xx-small;
+  text-align: center;
+  background: #d1a067;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Clock styles */
+.clock {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Fieyzaa Website</h1>
+  <p style="color:#333;">
+    <marquee style="width: 100%; scrolldelay: 100; height: 100px; font-size: 40px; line-height: 100px;">
+      Annyeong yeorubun, Welcome to my website! Have a look please~
+  </marquee></p>
+</div>
+
+<div class="topnav">
+  <a href="Home.html">Home</a>
+  <a href="biodata.html">Biodata</a>
+  <a href="family.html">Family</a>
+  <a href="education.html">Education</a>
+  <a href="friends.html">Friends</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="clock" id="clock">00:00:00</div>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="circle-frame">
+  <img src="myself.jpg" alt="Circular Image" style="text-align: center;">
+  </div>
+
+  <audio id="background-music" controls autoplay loop>
+    <source src="soundbg.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script>
+    window.onload = function() {
+        var audio = document.getElementById('background-music');
+        audio.play().catch(function(error) {
+            console.log('Autoplay was prevented:', error);
+        });
+    };
+  
+   </script>  
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Assalamualaikum W.B.T</h2>
+      <p>I am <sup>Nur Allya Hafiza Rosman</sup> and I am <sub>20 years old</sub>.</p>
+      <p>I am a student from UiTM Johor, Campus of Segamat and I am a student of Information Management.</p>
+      <p>In this website, we will dive into my personal life, and get to know me better🌷✨</p>
+    </div> 
+
+<div class="footer">
+  <h2>This Website is developed for IMD318 Individual Assignment</h2>
+</div>
+
+<script>
+  function updateClock() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      
+      const timeString = `${hours}:${minutes}:${seconds}`;
+      document.getElementById('clock').textContent = timeString;
+  }
+
+  // Update the clock every second
+  setInterval(updateClock, 1000);
+
+  // Initialize the clock immediately
+  updateClock();
+  
+</script>
+</body>
+</html>
