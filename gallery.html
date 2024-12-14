@@ -1,0 +1,214 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Home</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+<div class="bg"></div>
+<table width ="95%" border = "0" align="center">
+<tr>
+<td bgcolor="#FDEDEC">
+
+
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #cfbea4;
+    }
+
+    .topnav {
+  overflow: hidden;
+  background-color: #333; /* Background color for the navigation bar */
+}
+
+.topnav a {
+  float: left;
+  color:  #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+    <div class="bg"></div>
+
+    <div class="topnav">
+    <b><a href="Home.html">Home</a></b>
+    <b><a href="biodata.html">Biodata</a></b>
+    <b><a href="family.html">Family</a></b>
+    <b><a href="education.html">Education</a></b>
+    <b><a href="friends.html">Friends</a></b>
+    <b><a href="gallery.html">Gallery</a></b>
+    <b><a href="contact.html">Contact</a></b>
+    </div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+
+.column img {
+  opacity: 0.9; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.container {
+  position: relative;
+  display: none;
+}
+
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+<font color="maroon" font face="times new roman"</font>
+  <h1><i>💌 MY GOLD MEMORIES 💌</h1></i>
+</font>
+  <p>My Most Memorable Scene</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="tokayah.jpg" alt="Me and my Tok Ayah during my birthday" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="siblings.jpg" alt="My Forever Happy Pills" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="harta.jpg" alt="Pic of person who become my reason to become a better person everyday" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="sunset.jpg" alt="POV me captured the sunset🌅" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="fam.jpg" alt="My First and Last Complete family photo" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="bday.jpg" alt="Udin's after celebrating my birthday in Semester 3" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="intern.jpg" alt="My Gorgoues Internmate" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="ims.jpg" alt="My last event in IMS Club" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="trip.jpg" alt="Trip to Arkib Negara Malaysia with crackhead buddy" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="intern6.jpg" alt="Random selfie with intern buddy" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="classfw.jpg" alt="JCDIM1105E Last Pic of Hari Raya Aidilfitri" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="kibaran.jpg" alt="Kibaran Jalur Gemilang Day at Pejabat Tanah Rengit" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="registration.jpg" alt="Registration Department Teams!" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="internsv.jpg" alt="Internship Student from UiTM Segamat with SV, Mrs. Norliza" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="minah.jpg" alt="My diva cat, minah!" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="avengers.jpg" alt="My highschool friend and me after our last SPM paper" style="width:100%" onclick="myFunction(this);">
+  </div>
+
+<embed src="jb.mp4" autoplay="false"></embed>
+<embed src="internvd1.mp4" autoplay="false"></embed>
+<embed src="internvd2.mp4" autoplay="false"></embed>
+<embed src="imsvd.mp4" autoplay="false"></embed>
+<br><br>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:60%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<br><br><br><br><br><br><br><br><br><br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>
+</head>
+
+<body>
+    <div class="footer">
+        <p><b>This Website is developed for IMD311 Individual Assignment</b></p>
+    </div>
+    </body>
+    </html>
